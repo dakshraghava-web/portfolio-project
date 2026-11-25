@@ -1,0 +1,162 @@
+<!--
+  Project Name: Personal Portfolio Website (Web Dev I - Lab Assignment 1)
+  Page Name: index.html
+  Sections: Header & Navigation, Hero, About Me, My Projects, Technical Skills, Contact Me, Footer
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal one-page portfolio website of Daksh Raghava showcasing bio, projects, technical skills, and contact form.">
+  <title>Daksh Raghava | Personal Portfolio</title>
+</head>
+<body id="top">
+  <!-- Skip link for keyboard and screen-reader accessibility -->
+  <a href="#main-content">Skip to main content</a>
+
+  <!-- Header and Navigation Bar -->
+  <header>
+    <h1>Daksh Raghava</h1>
+    <nav aria-label="Primary Navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="hero" aria-labelledby="hero-heading">
+      <h2 id="hero-heading">Welcome to My Portfolio</h2>
+      <p>Hello! I am a web development student. This is my personal portfolio website.</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <img
+        src="images/profile.png"
+        alt="Profile avatar of Daksh Raghava, web development student"
+        width="200"
+        height="200"
+      >
+      <p>
+        I am Daksh Raghava, a student passionate about learning web development and building clean,
+        accessible, and creative web projects. I enjoy turning ideas into structured web pages using
+        modern web standards.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">My Projects</h2>
+      <ul>
+        <li>
+          <strong>Portfolio Website:</strong> A personal one-page website to showcase my bio,
+          technical skills, and contact details using semantic HTML.
+        </li>
+        <li>
+          <strong>Medium Clone:</strong> A simple blog layout inspired by Medium, built with
+          structured HTML and clean CSS styling.
+        </li>
+        <li>
+          <strong>Birthday Card:</strong> A creative greeting card webpage designed with semantic
+          HTML structure and expressive styling.
+        </li>
+        <li>
+          <strong>User Form:</strong> An accessible form webpage with fields like name, email, and
+          message for practicing HTML form handling and validation.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Technical Skills</h2>
+      <table border="1" cellpadding="6" cellspacing="2">
+        <thead>
+          <tr>
+            <th scope="col">Skill</th>
+            <th scope="col">Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Learning</td>
+          </tr>
+          <tr>
+            <td>Git &amp; GitHub</td>
+            <td>Beginner</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+      <form action="#" method="post" aria-label="Contact Form">
+        <p>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            autocomplete="name"
+            required
+          >
+        </p>
+
+        <p>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            autocomplete="email"
+            required
+          >
+        </p>
+
+        <p>
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="30"
+            placeholder="Enter your message"
+            required
+          ></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Daksh Raghava. All rights reserved.</p>
+    <p><a href="#top">Back to Top</a></p>
+  </footer>
+</body>
+</html>
